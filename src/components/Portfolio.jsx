@@ -21,7 +21,7 @@ function Portfolio() {
         <motion.div
           variants={portfolioAnimations}
           animate={controls}
-          transition={{ delay: 0.03, type: "tween", duration: 0.8 }}
+          transition={{ delay: 0.03, type: "tween", duration: 0.8}}
           className="child-one grid-box"
         >
           {" "}
@@ -69,7 +69,7 @@ function Portfolio() {
         <motion.div
           variants={portfolioAnimations}
           animate={controls}
-          transition={{ delay: 0.03, type: "tween", duration: 0.8 }}
+          transition={{ delay: 0.03, type: "tween", duration: 0.8}}
           className="child-seven grid-box"
         >
           {" "}

@@ -12,7 +12,7 @@ function Footer() {
       <motion.span
         variants={footerTextAnimation}
         animate={controls}
-        transition={{ delay: 0.02, type: "tween", duration: 0.8 }}
+        transition={{ delay: 0.02, type: "tween", duration: 0.8}}
       >
         &copy; Beauty Salon Website Transition Animation{" "}
       </motion.span>
