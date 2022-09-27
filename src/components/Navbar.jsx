@@ -13,7 +13,7 @@ function Navbar() {
   return (
       <Nav ref={element} variants={navAnimation} transition={{delay: 0.1}} animate={controls} state={isNavOpen ? 1 : 0}>
     <div className='brand__container'>
-        <a href='#' className='brand'>
+        <a href='#home' className='brand'>
             <img src={logo} alt='logo' />
         </a>
         <div className='toggle'>

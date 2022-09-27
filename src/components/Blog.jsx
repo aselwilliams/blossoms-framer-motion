@@ -6,7 +6,6 @@ import Title from './Title';
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
 import {blogsAnimation} from '../animation';
-import { GiHealthCapsule } from 'react-icons/gi';
 import blog7 from '../assets/blog7.jpeg';
 import blog8 from '../assets/blog8.jpeg';
 import blog3 from '../assets/blog3.jpeg'
