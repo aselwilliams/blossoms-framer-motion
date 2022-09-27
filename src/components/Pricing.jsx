@@ -267,9 +267,50 @@ overflow:hidden;
     }
   }
 }
-//     }
-//   }
-// }
+@media screen and (min-width: 280px) and (max-width: 1080px) { 
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  .pricing__title {
+    margin: 0;
+    padding: 0 2rem;
+    text-align: center;
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  .background {
+    display: none;
+  }
+  .pricing {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 4rem;
+    &__plan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      &__name {
+        height: 10rem;
+        width: 10rem;
+        h2 {
+          font-size: 1.5rem;
+        }
+        &__price {
+          p {
+            font-size: 3rem;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .pricing__plan__content {
+          padding: 0rem;
+          border: none;
+        }
+      }
+    }
+  }
+}
 `
 
 export default Pricing
