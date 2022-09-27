@@ -222,18 +222,11 @@ overflow:hidden;
       color: var(--secondary-color);
       h2 {
         font-size: 2rem;
-        // line-height: 2rem;
       }
       &__price {
         color: #fff;
         display: flex;
         position: relative;
-        // span {
-        //   position: absolute;
-        //   top: 1rem;
-        //   left: -0.9rem;
-        //   font-size: 3rem;
-        // }
         p {
           font-size: 3rem;
           font-weight: 400;
@@ -248,9 +241,6 @@ overflow:hidden;
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
-        // .line {
-        //   text-decoration: line-through;
-        // }
         margin-bottom: 2rem
       }
       &__actions {
