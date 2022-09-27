@@ -126,33 +126,33 @@ min-height: 100vh;
     }
   }
 }
-// @media screen and (min-width: 280px) and (max-width: 1080px) { 
-//   .contact {
-//     margin: 1rem;
-//     padding: 0 1rem;
-//     &__title {
-//       margin: 0;
-//       text-align: center;
-//       p {
-//         font-size: 0.8rem;
-//       }
-//       h2 {
-//         font-size: 1.3rem;
-//       }
-//     }
-//     &__data {
-//       grid-template-columns: 1fr;
-//       margin: 0;
-//       p {
-//         text-align: left;
-//       }
-//       &__form {
-//         button {
-//           height: 6rem;
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 280px) and (max-width: 1080px) { 
+  .contact {
+    margin: 1rem;
+    padding: 0 1rem;
+    &__title {
+      margin: 0;
+      text-align: center;
+      p {
+        font-size: 0.8rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    &__data {
+      grid-template-columns: 1fr;
+      margin: 0;
+      p {
+        text-align: left;
+      }
+      &__form {
+        button {
+          height: 6rem;
+        }
+      }
+    }
+  }
+}
 `
 export default Contact
