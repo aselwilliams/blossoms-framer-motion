@@ -1,59 +1,67 @@
-import React from 'react';
-import styled from 'styled-components';
-import home from '../assets/home.jpeg';
-import play from '../assets/play.png';
-import Navbar from './Navbar';
-import {motion} from 'framer-motion';
-import {homeAnimation, homeInfoAnimation} from '../animation';
+import React from "react";
+import styled from "styled-components";
+import home from "../assets/home.jpeg";
+import play from "../assets/play.png";
+import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+import { homeAnimation, homeInfoAnimation } from "../animation";
 
 function Home() {
   return (
-    <Section id='home'>
-        <Navbar />
-        <motion.div className="home" variants={homeAnimation} transition={{delay:0.3, duration: 0.6, type: 'tween'}}>
-            <div className="content">
-                <div className="title">
-                    <h1>Blossoms Spa</h1>
-                </div>
-                <div className="subTitle">
-                    <p>
-                        Where Health and Beauty come together.
-                    </p>
-                    <p>
-                        At the Blossoms Spa, we believe in beauty with a conscience. We have created a beauty salon that offers the highest quality hair services and rejuvinating spa treatments.
-                    </p>
-                </div>
-                <img src={play} alt='Play Button'/>
-            </div>
-        </motion.div>
+    <Section id="home">
+      <Navbar />
+      <motion.div
+        className="home"
+        variants={homeAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      >
+        <div className="content">
+          <div className="title">
+            <h1>Blossoms Spa</h1>
+          </div>
+          <div className="subTitle">
+            <p>Where Health and Beauty come together.</p>
+            <p>
+              At the Blossoms Spa, we believe in beauty with a conscience. We
+              have created a beauty salon that offers the highest quality hair
+              services and rejuvinating spa treatments.
+            </p>
+          </div>
+          <img src={play} alt="Play Button" />
+        </div>
+      </motion.div>
 
-        <motion.div className="info" variants={homeInfoAnimation} tansition={{delay:0.3, duration: 0.6, type: 'tween'}} >
-            <div className="grid">
-                <div className="col">
-                    <strong>Email</strong>
-                    <p>blossoms@gmail.com</p>
-                </div>
-                <div className="col">
-                    <strong>Phone</strong>
-                    <p>(974)509-1595</p>
-                </div>
-                <div className="col">
-                    <strong>Location</strong>
-                    <p>121 Murphy Rd. Murphy, Texas</p>
-                </div>
-                <div className="col">
-                    <strong>Working Hours</strong>
-                    <p>Tuesday to Saturday</p>
-                    <p>09:00am - 08:00pm</p>
-                </div>
-                <div className="col">
-                    <strong>Special Services</strong>
-                    <p>Special Event Services</p>
-                </div>
-            </div>
-        </motion.div>
+      <motion.div
+        className="info"
+        variants={homeInfoAnimation}
+        tansition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      >
+        <div className="grid">
+          <div className="col">
+            <strong>Email</strong>
+            <p>blossoms@gmail.com</p>
+          </div>
+          <div className="col">
+            <strong>Phone</strong>
+            <p>(974)509-1595</p>
+          </div>
+          <div className="col">
+            <strong>Location</strong>
+            <p>121 Murphy Rd. Murphy, Texas</p>
+          </div>
+          <div className="col">
+            <strong>Working Hours</strong>
+            <p>Tuesday to Saturday</p>
+            <p>09:00am - 08:00pm</p>
+          </div>
+          <div className="col">
+            <strong>Special Services</strong>
+            <p>Special Event Services</p>
+          </div>
+        </div>
+      </motion.div>
     </Section>
-  )
+  );
 }
 const Section = styled.section`
 background:url(${home}) no-repeat bottom right;
@@ -120,6 +128,6 @@ position:relative;
       }
     }
   }
-`
+`;
 
 export default Home;
